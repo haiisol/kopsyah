@@ -1,11 +1,3 @@
-// ==================================================
-// * Project Name   :  Synox – Finance & Consulting Site Template.
-// * File           :  JS Base
-// * Version        :  1.0.0
-// * Author         :  XpressBuddy (https://themeforest.net/user/xpressbuddy/portfolio)
-// * Developer      :  webrok (https://www.fiverr.com/webrok?up_rollout=true)
-// ==================================================
-
 (function($) {
   "use strict";
 
@@ -38,7 +30,7 @@
   // Mobile Menu Button Class Chnage - Start
   // --------------------------------------------------
   $(".mobile_menu_btn").on('click', function(){
-    $(".mobile_menu_btn > i").toggleClass("far fa-bars fa-solid fa-xmark");
+    $(".mobile_menu_btn > i").toggleClass("far fa-bars fas fa-xmark");
   });
   // Mobile Menu Button Class Chnage - End
   // --------------------------------------------------
