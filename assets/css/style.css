@@ -284,7 +284,7 @@ mark {
   overflow: hidden;
   position: relative; }
   .section_decoration .decoration_item {
-    z-index: -1;
+    z-index: -2;
     position: absolute; }
 
 .badge {
@@ -444,7 +444,6 @@ mark {
 .iconlist_block > li {
   gap: 12px;
   display: flex;
-  font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   align-items: flex-start; }
@@ -2609,13 +2608,17 @@ input[type=search]::-webkit-search-results-decoration {
     font-size: 70px;
     line-height: 80px; }
   .hero_insurance p {
-    color: #ABABAB;
+    color: #FFFFFF;
     font-size: 20px;
     max-width: 543px;
     line-height: 32px;
     margin-bottom: 41px; }
   .hero_insurance .hero_image {
-    margin: auto -190px auto auto; }
+    margin: auto -190px auto auto;
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    z-index: -1; }
   .hero_insurance .btns_group {
     padding-bottom: 70px; }
   .hero_insurance .iconbox_block .iconbox_icon {
