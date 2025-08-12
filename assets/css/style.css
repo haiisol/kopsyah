@@ -3075,6 +3075,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-size: 60px;
   font-family: 'SuisseIntl SemiBold';
   background: linear-gradient(to right, var(--bs-primary) 0%, var(--bs-dark) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -3272,6 +3273,7 @@ input[type=search]::-webkit-search-results-decoration {
   position: relative;
   text-align: center;
   border-radius: 20px;
+  line-height: 1;
   background-color: var(--bs-white);
   border: 1px solid var(--bs-secondary); }
   .service_block.style_3 .shape_circle {
@@ -3280,12 +3282,8 @@ input[type=search]::-webkit-search-results-decoration {
     top: -50%;
     z-index: -1;
     position: absolute; }
-  .service_block.style_3 .service_icon {
-    width: auto;
-    height: 100px; }
-    .service_block.style_3 .service_icon img {
-      max-width: 100%;
-      max-height: 90px; }
+  .service_block.style_3 .service_price span {
+      font-size:60px; }
   .service_block.style_3 .service_title {
     font-size: 24px;
     line-height: 30px;
@@ -3293,9 +3291,9 @@ input[type=search]::-webkit-search-results-decoration {
   .service_block.style_3 p {
     color: #6B6B6B;
     font-size: 16px;
-    max-width: 238px;
+    max-width: 270px;
     line-height: 26px;
-    margin: 0 auto 62px; }
+    margin: 0 auto; }
   .service_block.style_3 .btn {
     width: 100%;
     padding: 16px 30px; }
@@ -5651,12 +5649,12 @@ input[type=search]::-webkit-search-results-decoration {
 
   .service_block.style_3 {
     border-radius: 10px;
-    padding: 30px 10px 10px; }
+    padding: 30px; }
 
   .service_block.style_3 p {
     max-width: 100%;
     line-height: 24px;
-    margin: 0 auto 40px; }
+    margin: 0 auto; }
 
   .feedback_form_wrap .form-group .form-select {
     font-size: 20px; }
