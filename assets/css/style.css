@@ -3516,7 +3516,7 @@ input[type=search]::-webkit-search-results-decoration {
   max-width: 60px;
   filter: blur(2px); }
 .review_section .shape_star_1 {
-  top: 0;
+  top: 5%;
   right: 120px; }
 .review_section .shape_star_2 {
   left: 60px;
@@ -4659,7 +4659,8 @@ input[type=search]::-webkit-search-results-decoration {
 
 .insurance_member {
   z-index: 1;
-  height: 516px;
+  min-height: 450px;
+  height: 100%;
   padding: 30px;
   display: flex;
   overflow: hidden;
@@ -4671,7 +4672,7 @@ input[type=search]::-webkit-search-results-decoration {
   justify-content: flex-end;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center bottom 140px; }
+  background-position: center bottom 50px; }
   .insurance_member:before {
     left: 0;
     right: 0;
@@ -4867,7 +4868,7 @@ input[type=search]::-webkit-search-results-decoration {
   top: 366px;
   left: 77px; }
 .insurance_decoration_wrap .shape_star_8 {
-  top: 38%;
+  top: 34%;
   right: 77px; }
 .insurance_decoration_wrap .shape_nate_1 {
   top: 40%;

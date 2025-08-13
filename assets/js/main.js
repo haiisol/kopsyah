@@ -1,18 +1,18 @@
-(function($) {
+(function ($) {
   "use strict";
 
   // Back To Top - Start
   // --------------------------------------------------
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
-      $('.backtotop:hidden').stop(true, true).fadeIn();
+      $(".backtotop:hidden").stop(true, true).fadeIn();
     } else {
-      $('.backtotop').stop(true, true).fadeOut();
+      $(".backtotop").stop(true, true).fadeOut();
     }
   });
-  $(".scroll").on('click', function() {
-    $("html, body").animate({scrollTop: 0}, 0);
-    return false; 
+  $(".scroll").on("click", function () {
+    $("html, body").animate({ scrollTop: 0 }, 0);
+    return false;
   });
   // Back To Top - End
   // --------------------------------------------------
@@ -29,7 +29,7 @@
 
   // Mobile Menu Button Class Chnage - Start
   // --------------------------------------------------
-  $(".mobile_menu_btn").on('click', function(){
+  $(".mobile_menu_btn").on("click", function () {
     $(".mobile_menu_btn > i").toggleClass("far fa-bars fas fa-xmark");
   });
   // Mobile Menu Button Class Chnage - End
@@ -37,17 +37,17 @@
 
   // Sticky Header - Start
   // --------------------------------------------------
-  if ($('.stricky').length) {
-    $('.stricky').addClass('original').clone(true).insertAfter('.stricky').addClass('stricked-menu').removeClass('original');
+  if ($(".stricky").length) {
+    $(".stricky").addClass("original").clone(true).insertAfter(".stricky").addClass("stricked-menu").removeClass("original");
   }
-  $(window).on('scroll', function () {
-    if ($('.stricked-menu').length) {
+  $(window).on("scroll", function () {
+    if ($(".stricked-menu").length) {
       var headerScrollPos = 150;
-      var stricky = $('.stricked-menu');
+      var stricky = $(".stricked-menu");
       if ($(window).scrollTop() > headerScrollPos) {
-        stricky.addClass('stricky-fixed');
+        stricky.addClass("stricky-fixed");
       } else if ($(this).scrollTop() <= headerScrollPos) {
-        stricky.removeClass('stricky-fixed');
+        stricky.removeClass("stricky-fixed");
       }
     }
   });
@@ -56,21 +56,21 @@
 
   // Header Menu Item Effect - Start
   // --------------------------------------------------
-  $('.site_header .main_menu_list > li:not(.active)').mouseover(function () {
-    $('.site_header .main_menu_list > li:not(.active)').css({
-      'opacity': '0.5',
-      'transition': 'opacity 0.3s'
+  $(".site_header .main_menu_list > li:not(.active)").mouseover(function () {
+    $(".site_header .main_menu_list > li:not(.active)").css({
+      opacity: "0.5",
+      transition: "opacity 0.3s",
     });
     $(this).css({
-      'opacity': '1',
-      'transition': 'opacity 0.3s'
+      opacity: "1",
+      transition: "opacity 0.3s",
     });
   });
 
-  $('.site_header .main_menu_list > li:not(.active)').mouseout(function () {
-    $('.site_header .main_menu_list > li:not(.active)').css({
-      'opacity': '1',
-      'transition': 'opacity 0.3s'
+  $(".site_header .main_menu_list > li:not(.active)").mouseout(function () {
+    $(".site_header .main_menu_list > li:not(.active)").css({
+      opacity: "1",
+      transition: "opacity 0.3s",
     });
   });
   // Header Menu Item Effect - End
@@ -78,15 +78,15 @@
 
   // Offcanvas - Start
   // --------------------------------------------------
-  $(".offcanvas_btn").on('click', function() {
+  $(".offcanvas_btn").on("click", function () {
     $(".offcanvas_wrapper").addClass("active");
     $(".offcanvas_overlay").addClass("active");
   });
-  $(".offcanvas_close_btn").on('click', function() {
+  $(".offcanvas_close_btn").on("click", function () {
     $(".offcanvas_wrapper").removeClass("active");
     $(".offcanvas_overlay").removeClass("active");
   });
-  $(".offcanvas_overlay").on('click', function() {
+  $(".offcanvas_overlay").on("click", function () {
     $(".offcanvas_wrapper").removeClass("active");
     $(this).removeClass("active");
   });
@@ -95,7 +95,7 @@
 
   // Odometer Counter - Start
   // --------------------------------------------------
-  jQuery('.odometer').appear(function (e) {
+  jQuery(".odometer").appear(function (e) {
     var odo = jQuery(".odometer");
     odo.each(function () {
       var countNumber = jQuery(this).attr("data-count");
@@ -107,7 +107,7 @@
 
   // Pricing Toggle Button - Start
   // --------------------------------------------------
-  $(".pricing_toggle_btn").on('click', function(){
+  $(".pricing_toggle_btn").on("click", function () {
     $(this).toggleClass("active");
     $(".pricing_block").toggleClass("active");
   });
@@ -116,30 +116,30 @@
 
   // Videos & Images popup - Start
   // --------------------------------------------------
-  $('.video_btn').magnificPopup({
-    type: 'iframe',
+  $(".video_btn").magnificPopup({
+    type: "iframe",
     preloader: false,
     removalDelay: 160,
-    mainClass: 'mfp-fade',
-    fixedContentPos: false
+    mainClass: "mfp-fade",
+    fixedContentPos: false,
   });
 
-  $('.zoom-gallery').magnificPopup({
-    delegate: '.popup_image',
-    type: 'image',
+  $(".zoom-gallery").magnificPopup({
+    delegate: ".popup_image",
+    type: "image",
     closeOnContentClick: false,
     closeBtnInside: false,
-    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    mainClass: "mfp-with-zoom mfp-img-mobile",
     gallery: {
-      enabled: true
+      enabled: true,
     },
     zoom: {
       enabled: true,
       duration: 300,
-      opener: function(element) {
-        return element.find('img');
-      }
-    }
+      opener: function (element) {
+        return element.find("img");
+      },
+    },
   });
   // Videos & Images popup - End
   // --------------------------------------------------
@@ -147,7 +147,7 @@
   // Wow JS - Start
   // --------------------------------------------------
   var wow = new WOW({
-    animateClass: 'animated',
+    animateClass: "animated",
     offset: 100,
     mobile: true,
     duration: 1000,
@@ -155,28 +155,42 @@
   wow.init();
   // Wow JS - End
   // --------------------------------------------------
-  
+
   // Background Parallax - Start
   // --------------------------------------------------
-  $('.parallaxie').parallaxie({
+  $(".parallaxie").parallaxie({
     speed: 0.5,
     offset: 0,
   });
   // Background Parallax - End
+
+  $("#umroh_gallery").nanogallery2({
+    galleryTheme: {
+      thumbnail: { background: "#FFF", borderColor: "#FFF", borderRadius: "1rem" },
+    },
+    thumbnailHeight: 250,
+    thumbnailWidth: 250,
+    thumbnailGutterWidth: 10,
+    thumbnailGutterHeight: 10,
+  });
   // --------------------------------------------------
-  
+
   // Filter Elements - Start
   // --------------------------------------------------
-  $(".filter_elements_nav > ul > li").click(function(){
-    var filterValue = $(this).attr('data-filter');
-    if(filterValue == "all") {
+  $(".filter_elements_nav > ul > li").click(function () {
+    var filterValue = $(this).attr("data-filter");
+    if (filterValue == "all") {
       $(".filter_elements_wrapper > div").show();
     } else {
-      $(".filter_elements_wrapper > div").not('.' + filterValue).hide();
-      $(".filter_elements_wrapper > div").filter('.' + filterValue).show();
+      $(".filter_elements_wrapper > div")
+        .not("." + filterValue)
+        .hide();
+      $(".filter_elements_wrapper > div")
+        .filter("." + filterValue)
+        .show();
     }
   });
-  $(".filter_elements_nav > ul > li").on("click", function() {
+  $(".filter_elements_nav > ul > li").on("click", function () {
     $(this).addClass("active").siblings().removeClass("active");
   });
   // Filter Elements - End
@@ -184,7 +198,7 @@
 
   // Clients Logo Carousel - Start
   // --------------------------------------------------
-  const clientsLogoCarousel = new Swiper('.clients_logo_carousel', {
+  const clientsLogoCarousel = new Swiper(".clients_logo_carousel", {
     loop: true,
     speed: 5000,
     freeMode: true,
@@ -214,7 +228,7 @@
 
   // Review Carousel - Start
   // --------------------------------------------------
-  const reviewCarousel = new Swiper('.review_carousel', {
+  const reviewCarousel = new Swiper(".review_carousel", {
     loop: true,
     speed: 1000,
     spaceBetween: 30,
@@ -239,7 +253,7 @@
     },
   });
 
-  const reviewCarouselTwo = new Swiper('.review_carousel_2', {
+  const reviewCarouselTwo = new Swiper(".review_carousel_2", {
     loop: true,
     speed: 1000,
     spaceBetween: 30,
@@ -280,6 +294,4 @@
   });
   // Review Carousel - End
   // --------------------------------------------------
-
-
 })(jQuery);
