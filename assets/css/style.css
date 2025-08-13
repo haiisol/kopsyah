@@ -5914,6 +5914,7 @@ input[type=search]::-webkit-search-results-decoration {
     width: calc(50% - 10px); }
 
   .review_updown_style {
+    pointer-events: none;
     padding-top: 0; }
 
   .review_updown_style > div:first-child {
