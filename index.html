@@ -10,7 +10,11 @@
     <meta name="author" content="Kopsyah MUI" />
 
     <title>Kopsyah MUI - Mitra Usaha Ideal</title>
-    <link rel="shortcut icon" href="assets/images/site_logo/favourite_icon.webp" />
+    <link rel="icon" type="image/png" href="assets/images/site_logo/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/site_logo/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/site_logo/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/site_logo/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/site_logo/site.webmanifest" />
 
     <!-- Fraimwork - CSS Include -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
@@ -128,7 +132,6 @@
                       <span class="btn_label">Daftar Sekarang!</span>
                     </a>
                   </li>
-                  
                 </ul>
               </div>
               <div class="col-lg-5">
@@ -1102,18 +1105,26 @@
     <script src="assets/js/main.js"></script>
     <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '743306408243486');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "743306408243486");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=743306408243486&ev=PageView&noscript=1"/></noscript>
+    <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=743306408243486&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
   </body>
 </html>
