@@ -14,6 +14,12 @@
     $("html, body").animate({ scrollTop: 0 }, 0);
     return false;
   });
+  
+  $('a[href*="wa.me"]').on("click", function () {
+    fbq("track", "AddToCart", {
+      content_id: new Date().getTime(),
+    });
+  });
   // Back To Top - End
   // --------------------------------------------------
 
